@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="SURF_COND_CODE_Dry <= 0.5\ngini = 0.8\nsamples = 22194\nvalue = [4438.8, 4438.8, 4438.8, 4438.8, 4438.8]"] ;
+1 [label="WEATHER_CODE_Raining <= 0.5\ngini = 0.273\nsamples = 5592\nvalue = [4072.568, 129.42, 311.006, 108.424, 179.087]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AGE <= -0.204\ngini = 0.536\nsamples = 2134\nvalue = [1251.501, 120.528, 293.847, 90.901, 157.767]"] ;
+1 -> 2 ;
+3 [label="gini = 0.598\nsamples = 763\nvalue = [367.893, 45.445, 250.949, 17.523, 25.584]"] ;
+2 -> 3 ;
+4 [label="gini = 0.443\nsamples = 1371\nvalue = [883.608, 75.083, 42.897, 73.378, 132.183]"] ;
+2 -> 4 ;
+5 [label="SAF_EQUIP_CODE_MC/Bike Helmet and Eye Protection <= 0.5\ngini = 0.044\nsamples = 3458\nvalue = [2821.067, 8.891, 17.159, 17.523, 21.32]"] ;
+1 -> 5 ;
+6 [label="gini = 0.043\nsamples = 3456\nvalue = [2821.067, 8.891, 17.159, 17.523, 19.188]"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [0.0, 0.0, 0.0, 0.0, 2.132]"] ;
+5 -> 7 ;
+8 [label="AREA_DAMAGED_CODE_MAIN_Six o'clock <= 0.5\ngini = 0.76\nsamples = 16602\nvalue = [366.232, 4309.38, 4127.794, 4330.376, 4259.713]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="AGE <= -0.33\ngini = 0.712\nsamples = 12396\nvalue = [342.979, 655.002, 3965.857, 4058.77, 4174.433]"] ;
+8 -> 9 ;
+10 [label="gini = 0.488\nsamples = 4336\nvalue = [66.437, 295.393, 3203.357, 500.501, 546.855]"] ;
+9 -> 10 ;
+11 [label="gini = 0.639\nsamples = 8060\nvalue = [276.543, 359.609, 762.5, 3558.268, 3627.578]"] ;
+9 -> 11 ;
+12 [label="COLLISION_TYPE_CODE_Same Direction Rear End <= 0.5\ngini = 0.236\nsamples = 4206\nvalue = [23.253, 3654.378, 161.937, 271.607, 85.28]"] ;
+8 -> 12 ;
+13 [label="gini = 0.749\nsamples = 287\nvalue = [3.322, 89.902, 64.346, 82.139, 60.762]"] ;
+12 -> 13 ;
+14 [label="gini = 0.16\nsamples = 3919\nvalue = [19.931, 3564.476, 97.591, 189.468, 24.518]"] ;
+12 -> 14 ;
+}
